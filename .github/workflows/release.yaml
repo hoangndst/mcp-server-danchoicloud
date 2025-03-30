@@ -10,7 +10,7 @@ jobs:
     name: Build distribution 📦
     runs-on: ubuntu-latest
     env:
-      UV_CACHE_DIR: ${{ runner.temp }}/.uv-cache
+      UV_CACHE_DIR: /tmp/.uv-cache
 
     steps:
       - uses: actions/checkout@v4 # v4
@@ -28,7 +28,7 @@ jobs:
       - name: Cache uv
         uses: actions/cache@v4
         with:
-          path: ${{ runner.temp }}/.uv-cache
+          path: /tmp/.uv-cache
           key: uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
           restore-keys: |
             uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
