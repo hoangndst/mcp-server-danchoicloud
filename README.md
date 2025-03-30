@@ -60,7 +60,7 @@ MCP Server Danchoicloud: Check out my blog at [@hoangndst](https://hoangndst.com
 <div align="center">
     <img
         id="figure-1"
-        src="https://hoangndst.com/static/blog/model-context-protocol/7.png"
+        src="./assets/1.png"
         alt="Result from get_sieu_nhan from danchoicloud local server"
         style="width: 80%; max-width: 600px; height: auto; border-radius: 8px;"
     />
