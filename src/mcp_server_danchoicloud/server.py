@@ -8,7 +8,7 @@ from mcp_server_danchoicloud.tools.sieu_nhan import SieuNhanTools, get_sieu_nhan
 
 
 async def serve() -> None:
-    server = Server('danchoicloud_mcp', 'v0.1.0')
+    server = Server('mcp_server_danchoicloud', 'v0.2.0-alpha.0')
 
     @server.list_tools()
     async def list_tools() -> list[Tool]:
