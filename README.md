@@ -2,8 +2,8 @@
 
 [![Release](https://github.com/hoangndst/mcp-server-danchoicloud/actions/workflows/release.yaml/badge.svg)](https://github.com/hoangndst/mcp-server-danchoicloud/actions/workflows/release.yaml)
 [![GitHub release](https://img.shields.io/github/release/hoangndst/mcp-server-danchoicloud.svg)](https://github.com/hoangndst/mcp-server-danchoicloud/releases)
-![PyPI - Version](https://img.shields.io/pypi/v/mcp-server-danchoicloud)
-![Docker Image Version](https://img.shields.io/docker/v/hoangndst/mcp-server-danchoicloud)
+[![PyPI - Version](https://img.shields.io/pypi/v/mcp-server-danchoicloud)](https://pypi.org/project/mcp-server-danchoicloud)
+[![Docker Image Version](https://img.shields.io/docker/v/hoangndst/mcp-server-danchoicloud)](https://hub.docker.com/r/hoangndst/mcp-server-danchoicloud)
 
 ### Description
 
