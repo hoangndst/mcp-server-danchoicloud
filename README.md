@@ -7,8 +7,7 @@
 
 ### Description
 
-MCP Server Danchoicloud: Checkout my blog at [@hoangndst](https://hoangndst.com/blog/model-context-protocol).
-
+MCP Server Danchoicloud: Check out my blog at [@hoangndst](https://hoangndst.com/blog/model-context-protocol).
 ### Configuration
 
 #### 1. With Continue:
