@@ -4,7 +4,7 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import Tool, TextContent, ImageContent
 
-from mcp_server_danchoicloud.modules.sieu_nhan import SieuNhanTools, get_sieu_nhan_tools
+from mcp_server_danchoicloud.tools.sieu_nhan import SieuNhanTools, get_sieu_nhan_tools
 
 
 async def serve() -> None:
@@ -19,16 +19,21 @@ async def serve() -> None:
                 description="Get a random superhero from the API.",
                 inputSchema={
                     "type": "object",
-                    "properties": {},
-                    "required": [""]
+                    "properties": {
+                        "text": {
+                            "type": "string",
+                            "description": "The text to display.",
+                        },
+                    },
+                    "required": ["text"],
                 }
             )
         ]
 
     @server.call_tool()
     async def handle_call_tool(
-        name: str, arguments: dict | None
-    ) -> Sequence[TextContent| ImageContent]:
+            name: str, arguments: dict | None
+    ) -> Sequence[TextContent | ImageContent]:
         """Handle tool calls."""
         try:
             match name:
@@ -36,9 +41,7 @@ async def serve() -> None:
                     result = await get_sieu_nhan_tools()
                 case _:
                     raise ValueError(f"Unknown tool: {name}")
-            return [
-                TextContent(type="text", text=result)
-            ]
+            return [result]
         except Exception as e:
             raise ValueError(f"Error processing mcp_server_danchoicloud query: {str(e)}")
 
